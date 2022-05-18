@@ -4,7 +4,7 @@ public class vowelAndConsonant {
   
 	
 	
-	void finalVowel(char ch)
+	void checkVowel(char ch)
 	{
 		if(ch == 'a' || ch == 'e' || ch=='i' || ch == 'o' || ch == 'u' || ch=='A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
 		{
@@ -22,11 +22,11 @@ public class vowelAndConsonant {
 	public static void main(String[] args) {
 		vowelAndConsonant  alpha = new vowelAndConsonant();
         
-		alpha.finalVowel('U');
+		alpha.checkVowel('U');
 		
-		alpha.finalVowel('D');
+		alpha.checkVowel('D');
 		
-		alpha.finalVowel('*');
+		alpha.checkVowel('*');
 	}
 
 }
