@@ -1,16 +1,65 @@
 package com.masai;
 
 public class Student {
-  void StudentDetail(int roll,int age,int marks,String name) {
-	  if(age<18 || age>60)
-	  {
-		 System.out.println("Enter valid Age"); 
-	  }
-	  if(marks<0 || marks>500)
-	  {
-		  System.out.println("Enter valid MArks");
-	  }
-	  
-	  System.out.println("The Roll is:" + roll +"\n"+"The age is:" + age +"\n"+"The Marks are:" +  marks +"\n"+ "The name is:"+ name);
-  }
+ 
+	private int roll;
+	private String name;
+	private String address;
+	private String collageName;
+	private boolean from;
+		
+	public Student(String name,String address,int roll,boolean from)
+	{
+		if(from==true)
+		{
+			this.roll=roll;
+			this.name=name;
+			this.address=address;
+			this.collageName="NIT";
+		}
+		else
+		{
+			this.roll=roll;
+			this.name=name;
+			this.address=address;
+			this.collageName="Masai";
+		}
+	}
+
+	public void setRoll(int roll)
+	{
+		this.roll=roll;
+	}
+	
+	public void setName(String name)
+	{
+		this.name=name;
+	}
+	
+	public void setAddress(String address)
+	{
+		this.address=address;
+	}
+	public int getRoll()
+	{
+		return roll;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public String getAddress()
+	{
+		return address;
+	}
+	
+	public void showDetails()
+	{
+		System.out.println("Roll no. is:"+roll);
+		System.out.println("Roll name is:"+name);
+		System.out.println("Roll Address is:"+address);
+		System.out.println("Roll CollageName is:"+collageName);
+	}
 }

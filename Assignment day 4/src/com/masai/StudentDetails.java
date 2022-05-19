@@ -1,7 +1,7 @@
 package com.masai;
 
 public class StudentDetails {
-   Student s1 = new Student();
+   Students s1 = new Students();
    
    StudentDetails(){
 	   
