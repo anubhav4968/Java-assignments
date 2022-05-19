@@ -12,7 +12,11 @@ public class nonStaticMethod {
 			}
 			else
 			{
-				System.out.println(n*10);
+				int b = (n/10)*10;
+				//System.out.println(n/10);
+				//System.out.println(b);
+				int a = b + 10;
+				System.out.println(a);
 			}
 		}
 		else
@@ -23,6 +27,6 @@ public class nonStaticMethod {
 	}
 	public static void main(String[] args) {
 		
-		new nonStaticMethod().number(10);
+		new nonStaticMethod().number(46);
 	}
 }
