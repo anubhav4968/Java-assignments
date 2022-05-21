@@ -20,10 +20,14 @@ public class Demo {
 	   System.out.println("This is the Demo(float f) constructor");
    }
    
+  
+  
+   
+   
    public static void main(String[] args) {
 
-	   Demo d1 = new Demo(10.5f);
-	   
+	
+	   Demo d1 = new Demo();
 	   
 	   
 	   
