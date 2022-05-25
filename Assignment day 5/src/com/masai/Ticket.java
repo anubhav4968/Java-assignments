@@ -57,6 +57,7 @@ public class Ticket {
 			int leftTickets = availableTickets - this.noOfTickets;
 			this.left = leftTickets;
 			availableTickets=leftTickets;
+			this.showData();
 		}
 	}
 	public int getAvailableTickets() {

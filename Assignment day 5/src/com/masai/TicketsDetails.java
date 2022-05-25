@@ -27,7 +27,7 @@ public class TicketsDetails {
 		   Ticket t1 = new Ticket(id,price,noOfTickets);
 		   t1.TotalPrice(noOfTickets);
            t1.setAvailableTickets();
-		   t1.showData();
+		   
 		   
 		}
 	}

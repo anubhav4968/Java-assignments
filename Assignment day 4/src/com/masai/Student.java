@@ -6,7 +6,7 @@ public class Student {
 	private String name;
 	private String address;
 	private String collageName;
-	private boolean from;
+	
 		
 	public Student(String name,String address,int roll,boolean from)
 	{
@@ -15,7 +15,7 @@ public class Student {
 			this.roll=roll;
 			this.name=name;
 			this.address=address;
-			this.collageName="NIT";
+//			this.collageName="NIT";
 		}
 		else
 		{
@@ -58,8 +58,11 @@ public class Student {
 	public void showDetails()
 	{
 		System.out.println("Roll no. is:"+roll);
-		System.out.println("Roll name is:"+name);
-		System.out.println("Roll Address is:"+address);
-		System.out.println("Roll CollageName is:"+collageName);
+		System.out.println("Name is:"+name);
+		System.out.println("Address is:"+address);
+		if(collageName!=null) {
+			System.out.println("CollageName is:"+collageName);
+		}
+		
 	}
 }
