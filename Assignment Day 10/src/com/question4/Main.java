@@ -9,3 +9,4 @@ public class Main {
 		System.out.println("Area Of Square:"+area.squareArea(8));
 	}
 }
+                                                                    
