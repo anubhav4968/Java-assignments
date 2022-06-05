@@ -10,7 +10,7 @@ public class AbstractAndInterface {
 		ChildOfAbstract child = new ChildOfAbstract();
 		child.print();
 		
-		//by the inteface we achieve 100% abstraction in java.
+		//by the interface we achieve 100% abstraction in java.
 		//for inheritance we use "implements".
 		//an interface contains only abstract methods and constant variables .
 		ChildOfInterface intr = new ChildOfInterface();
