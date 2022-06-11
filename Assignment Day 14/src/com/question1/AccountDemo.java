@@ -7,7 +7,7 @@ public class AccountDemo {
 		Account account = new Account("12345678");
 		account.deposit(1234);
 		try {
-			int x = 120;
+			int x = 12000;
 			double leftAmount = account.withdraw(x);
 			System.out.println("Left Amount: "+leftAmount);
 		}

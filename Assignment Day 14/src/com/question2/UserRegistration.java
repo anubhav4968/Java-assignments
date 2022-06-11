@@ -22,10 +22,10 @@ public class UserRegistration {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Enter Your Name:");
-		String name =  scan.next();
 		System.out.println("Enter Your Country:");
 		String country = scan.next();
+		System.out.println("Enter Your Name:");
+		String name =  scan.next();
 		
 		UserRegistration user = new UserRegistration();
 		try {
