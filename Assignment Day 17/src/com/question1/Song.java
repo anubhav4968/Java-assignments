@@ -11,10 +11,6 @@ public class Song {
 		this.movieName = movieName;
 		this.songName = songName;
 	}
-
-
-	
-	
 	
 	@Override
 	public int hashCode() {
@@ -32,9 +28,7 @@ public class Song {
 		Song other = (Song) obj;
 		return Objects.equals(movieName, other.movieName) && Objects.equals(songName, other.songName);
 	}
-
-
-
+	
 	public Song()
 	{
 		
@@ -61,6 +55,6 @@ public class Song {
 	{
 		System.out.println(this.songName+" of "+this.movieName+" is Playing....");
 	}
-	
+
 	
 }

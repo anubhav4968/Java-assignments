@@ -1,4 +1,4 @@
-package com.question2;
+package com.question4;
 
 public class Main {
 

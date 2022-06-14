@@ -8,9 +8,10 @@ public class Main {
 		
 		PlayList list = new PlayList();
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter Songs Details");
+		System.out.println("Enter Songs Details:");
+		System.out.println("--------------------------");
 		int count = 1;
-		while(count<=2)
+		while(count<=4)
 		{
 			count++;
 			System.out.println("Enter Song Name");
@@ -22,9 +23,11 @@ public class Main {
 			Song song = new Song(MovieName,name);
 			list.addSong(song);
 		}
+		
 		for(int i=0;i<list.songs.size();i++)
 		{
-			System.out.println(list.songs.get(i));
+			Song song1 = list.songs.get(i);
+			song1.play();
 			
 		}
 	}

@@ -1,15 +1,20 @@
 package com.question1;
 
-import java.util.ArrayList;
 import java.util.Scanner;
+
+import java.util.TreeSet;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		ArrayList <Product> products = new ArrayList <>();
+		
+		TreeSet <Product> products = new TreeSet <>(new SortByproductId());
+		TreeSet <Product> products1 = new TreeSet <>(new SortByproductPrice());
+		TreeSet <Product> products2 = new TreeSet <>(new SortByproductName());
 		
 		Scanner scan = new Scanner(System.in);
+		System.out.println(products);
 		 int count = 1;
 		 
 		 while(true)
@@ -25,8 +30,9 @@ public class Main {
 			 System.out.println("Enter ProductPrice:");
 			 double price  = scan.nextDouble();
 			 
-			 Product product = new Product(pid,pName,price);
-			 
+			 products.add(new Product(pid,pName,price));
+			 products1.add(new Product(pid,pName,price));
+			 products2.add(new Product(pid,pName,price));
 			 System.out.println("Want More To Add y/n");
 			 String ans = scan.next();
 			 if(ans.equalsIgnoreCase("n"))
@@ -39,10 +45,26 @@ public class Main {
 		 System.out.println("1 for sorting the product according to the productPrice");
 		 System.out.println("2 for sorting the product according to the productName");
 		 System.out.println("3 for sorting the product according to the productId");
-		 String choice = scan.next();
+		String choice = scan.next();
 		 if(choice.equals("1"))
 		 {
-			 
+			
+			 System.out.println(products1);
+		 }
+		 else if(choice.equals("2"))
+		 {
+			
+			 System.out.println(products2);
+		 }
+		 else if(choice.equals("3"))
+		 {
+			
+			 System.out.println(products);
+		 }
+		 else
+		 {
+			
+			 System.out.println(products);
 		 }
 	}
 }
