@@ -1,3 +1,4 @@
+Refactoring.savealleditors=true
 command=C\:\\Users\\DELL\\Downloads\\sts-4.14.1.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\\jre\\bin\\javadoc.exe
 content_assist_completion_replacement_background=200,200,0
 content_assist_completion_replacement_foreground=194,0,0
